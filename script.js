@@ -23,6 +23,11 @@ document.addEventListener('DOMContentLoaded', function() {
             if (navbar) {
                 navbar.classList.toggle('dark-mode');
             }
+            //for hero changes in dark mode
+            const hero = document.querySelector('.hero-section');
+            if(hero){
+                hero.classList.toggle('dark-mode');
+            }
         });
     } else {
         console.error("darkModeToggle element not found.");

@@ -1,17 +1,5 @@
 /* style.css */
-.syncopate-regular {
-    font-family: "Syncopate", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .syncopate-bold {
-    font-family: "Syncopate", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-
-
+   
 body {
     font-family: Syncopate,'Roboto', sans-serif;
     color: #333;
@@ -25,6 +13,7 @@ body {
 body.dark-mode {
     background-color: #121212; /* Dark background color */
     color: #e0e0e0;
+    transition: background-color 0.53s ease, color 0.3s ease;
 }
 
 
@@ -50,8 +39,10 @@ body.dark-mode {
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 50px;
+    height: 24px;
+    padding: 3px;
+    margin-top: 6px;
 }
 
 .switch input {
@@ -67,16 +58,17 @@ body.dark-mode {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #ff4b4b;
     -webkit-transition: .4s;
     transition: .4s;
+    z-index: 0;
 }
 
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 16px;
+    width: 16px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -85,11 +77,11 @@ body.dark-mode {
 }
 
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #333;
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #232323;
 }
 
 input:checked + .slider:before {
@@ -106,6 +98,41 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
+/* Moon Icon Styles*/
+.moon-icon{
+    position: absolute;
+    top: 50%;
+    
+    transform: translateY(-50%);
+    color: #fff;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+    width: 14px;
+    height: 14px;
+    z-index: 10;
+}
+.moon-icon{
+    left: 10%;
+}
+input:checked + .slider .moon-icon {
+    opacity: 1;
+}
+
+.sun-icon{
+    position: absolute;
+    color: #ffffff;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+    width: 14px;
+    height: 14px;
+    padding-top: 2px;
+}
+.sun-icon{
+    right: 10%;
+}
+input:checked + .slider .sun-icon {
+    opacity: 0; /* Hide sun */
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Noto Sans,'Montserrat', sans-serif;
@@ -128,11 +155,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-dark-mode .navbar-nav .nav-link:hover {
-    color: #007bff;
+    color: #ff0000;
     
 }
 
+.navbar .navbar-brand{
+    color: #F5F5F5;
+    font-family: Cinzel Decorative;
+    letter-spacing: 5px;
+    background-color: rgba(0, 0, 0, 0.19); /* Adjust alpha for darkness */
+    padding: 5px 10px; /* Add padding for visual separation */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
 
+.dark-mode .navbar .navbar-brand{
+    color: #F5F5F5;
+}
 
 /* Hero Section */
 
@@ -165,8 +203,11 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay for readability */
-
+    background-color: rgba(0, 0, 0, 0.35); /* Dark overlay for readability */
+}
+.hero-section.dark-mode {
+        /* Apply a dark filter */
+    filter: brightness(0.7);
 }
 
 /* Sections */
@@ -240,8 +281,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #333; /* GitHub gray */
 }
 
-.twitter-link {
-    color: #1DA1F2; /* Twitter blue */
+.discord-link {
+    color: #5865F2; /* Discord Blurple */
 }
 
 .social-links a:hover {
@@ -298,12 +339,12 @@ h1, h2, h3, h4, h5, h6 {
 .skill-css { background-color: #2965f1; }
 .skill-js { background-color: #f0db4f; color: #000; }
 .skill-react { background-color: #61dafb; color: #000; }
-.skill-node { background-color: #68a063; }
-.skill-express { background-color: #343a40; }
+.skill-node { background-color: #68A063; }
+.skill-figma { background-color: #A982C9; }
 .skill-mongo { background-color: #4db33d; }
 .skill-git { background-color: #f34f29; }
 .skill-bootstrap { background-color: #563d7c; }
-.skill-responsive { background-color: #17a2b8; }
+.skill-aws { background-color: #4A4A4A; }
 
 /* Projects Section */
 
@@ -323,7 +364,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-card:hover {
-    transform: translateY(-12px);
+    /* transform: translateY(-10px); */
+    transform: translate3d(5px, -5px, 0px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
@@ -365,7 +407,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Contact Section */
 .contact-section {
-    background: linear-gradient(135deg, #000000, #d0ff00);
+    background: linear-gradient(135deg, #5d2bdc, #ff6600);
 }
 
 #contactForm .form-control {
@@ -380,7 +422,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 10px;
     padding: 18px 25px;
     font-weight: 600;
-    background-color: #007bff;
+    background-color: #17a2b8 ;
     border-color: #007bff;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
@@ -440,15 +482,16 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .dark-mode .navbar-dark .navbar-nav .nav-link{
-    color: #3C3D37; /* Or any color you prefer for dark mode */
+    color: #cbc3c3; /* Or any color you prefer for dark mode */
 }
 
 .dark-mode .navbar-dark .navbar-nav .nav-link:hover {
-    color: whitesmoke;
+    color: #fff;
+    text-shadow: 0 0 3px #fff; /*3 pixels of white glow during night mode*/
 }
 
 .navbar.dark-mode {
-    background-color: #686D76;
-    opacity: 0.8;
+    background-color: rgba(18, 18, 18, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     /* Dark background with 80% opacity */
 }
