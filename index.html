@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagavath Rugvedi - Portfolio</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">Bhagavath Rugvedi</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <label class="switch">
+                        <input type="checkbox" id="darkModeToggle">
+						<!-- <p>Dark Mode</p> -->
+                        <span class="slider round"></span>
+                    </label>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="site-content">
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <h1 class="namskara">Hello, I'm Bhagavath</h1>
+                <p>A passionate Full Stack Developer.</p>
+                <a href="#projects" id="midbut" class="btn btn-primary">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="profile-image-container">
+                        <img src="images/katsuki.jpg" alt="Your Profile" class="profile-image">
+                    </div>
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>
+							Driven by curiosity and a passion for technology, I craft digital experiences that resonate.
+							My journey is fueled by continuous learning and a desire to solve complex problems.
+							Let's build something amazing together.
+						</p>
+                        <div class="social-links">
+							<!-- my social profile links -->
+                            <a href="your-linkedin-url" class="linkedin-link"><i class="fab fa-linkedin"></i></a>  
+							<a href="your-github-url" class="github-link"><i class="fab fa-github"></i></a>
+							<a href="your-twitter-url" class="twitter-link"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill skill-html">HTML5</div>
+                    <div class="skill skill-css">CSS3</div>
+                    <div class="skill skill-js">JavaScript</div>
+                    <div class="skill skill-react">React</div>
+                    <div class="skill skill-node">Node.js</div>
+                    <div class="skill skill-express">Express.js</div>
+                    <div class="skill skill-mongo">MongoDB</div>
+                    <div class="skill skill-git">Git/GitHub</div>
+                    <div class="skill skill-bootstrap">Bootstrap</div>
+                    <div class="skill skill-responsive">Responsive Design</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2 id="Proj">Projects</h2> 		<!--for the name Projects in Project section-->
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="project-card">
+                            <img src="images/atlab.jpg" class="project-image" alt="Project 1">
+                            <div class="project-details">
+                                <h3 class ="project-name">Copyright Confirmation using Consortium Blockchain</h3>
+                                <p>A real-time dashboard visualizing data with interactive charts and maps, built using React and D3.js.</p>
+                                <a href="#" class="btn btn-outline-primary">Explore <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="project-card">
+                            <img src="images/skel.jpg" class="project-image" alt="Project 2">
+                            <div class="project-details">
+                                <h3 class ="project-name">Number plate detection system</h3>
+                                <p>Number plate detection system built using CNN(convolution neural network)model.</p>
+                                <a href="#" class="btn btn-outline-primary">Discover <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-md-6 mb-4">
+                        <div class="project-card">
+                            <img src="images/katsuki.jpg" class="project-image" alt="Project 2">
+                            <div class="project-details">
+                                <h3 class ="project-name">Number plate detection system</h3>
+                                <p>Number plate detection system built using CNN(convolution neural network)model.</p>
+                                <a href="#" class="btn btn-outline-primary">Discover <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-md-6 mb-4">
+                        <div class="project-card">
+                            <img src="images/7047015.jpg" class="project-image" alt="Project 2">
+                            <div class="project-details">
+                                <h3 class ="project-name">Number plate detection system</h3>
+                                <p>Number plate detection system built using CNN(convolution neural network)model.</p>
+                                <a href="#" class="btn btn-outline-primary">Discover <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2>Contact</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Bhagavath Rugvedi. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
