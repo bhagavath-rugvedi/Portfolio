@@ -49,8 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            // Simulate form submission (replace with actual backend submission)
-            console.log('Form submitted:', { name, email, message });
+            //for actual backend submission)
+            //console.log('Form submitted:', { name, email, message });
             alert('Message sent successfully!');
             contactForm.reset(); // Clear the form
         });

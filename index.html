@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhagavath Rugvedi - Portfolio</title>
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- Fonts from Google fonts -->
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body>
 
     <header class="site-header">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 1);">
             <a class="navbar-brand" href=" ">Bhagavath Rugvedi</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -34,11 +39,10 @@
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <label class="switch">
-                        <input type="checkbox" id="darkModeToggle">
-                        <!-- <p>Dark Mode</p> -->
+                        <input type="checkbox" id="darkModeToggle">         <!-- <p>Dark Mode</p> -->
                         <span class="slider round"></span>
                         <i class="fas fa-moon moon-icon"></i>
-                        <i class="fas fa-sun sun-icon"></i>                       						
+                        <i class="fas fa-sun sun-icon"></i>
                     </label>
                 </ul>
             </div>
@@ -47,6 +51,7 @@
 
     <main class="site-content">
         <section id="hero" class="hero-section">
+            <div class="hero-overlay"></div>
             <div class="container hero-content">
                 <h1 class="namskara">Hello, I'm Bhagavath</h1>
                 <p>A passionate Full Stack Developer.</p>
@@ -63,15 +68,20 @@
                     <div class="about-text">
                         <h2>About Me</h2>
                         <p>
-							Driven by curiosity and a passion for technology, I craft digital experiences that resonate.
-							My journey is fueled by continuous learning and a desire to solve complex problems.
-							Let's build something amazing together.
-						</p>
+                            My journey into web development began with a simple curiosity:
+                            how do websites actually work? That curiosity quickly turned into a passion,
+                            and I've been building and refining my skills ever since.
+                            From tackling complex coding challenges to designing intuitive user interfaces,
+                            I thrive on creating digital experiences that make a difference.
+                            I've had the privilege of working on projects that have allowed me to explore the
+                            latest technologies and push the boundaries of what's possible. Let's connect and build
+                            something extraordinary together!
+                        </p>
                         <div class="social-links">
-							<!-- my social profile links -->
-                            <a href="your-linkedin-url" class="linkedin-link"><i class="fab fa-linkedin"></i></a>  
-							<a href="your-github-url" class="github-link"><i class="fab fa-github"></i></a>
-							<a href="your-discord-url" class="discord-link"><i class="fab fa-discord"></i></a>
+                            <!-- my social profile links -->
+                            <a href="your-linkedin-url" class="linkedin-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="your-github-url" class="github-link"><i class="fab fa-github"></i></a>
+                            <a href="your-discord-url" class="discord-link"><i class="fab fa-discord"></i></a>
                         </div>
                     </div>
                 </div>
@@ -98,45 +108,49 @@
 
         <section id="projects" class="section projects-section">
             <div class="container">
-                <h2 id="Proj">Projects</h2> 		<!--for the name Projects in Project section-->
+                <h2 id="Proj">Projects</h2> <!--for the name Projects in Project section-->
                 <div class="row">
                     <div class="col-md-6 mb-4">
                         <div class="project-card">
-                            <img src="images/atlab.jpg" class="project-image" alt="Project 1">
+                            <img src="images/copyright-bc.jpg" class="project-image" alt="Project 1">
                             <div class="project-details">
-                                <h3 class ="project-name">Copyright Confirmation using Consortium Blockchain</h3>
-                                <p>A real-time dashboard visualizing data with interactive charts and maps, built using React and D3.js.</p>
-                                <a href="#" class="btn btn-outline-primary">Explore <i class="fas fa-external-link-alt"></i></a>
+                                <h3 class="project-name">Copyright Confirmation using Consortium Blockchain</h3>
+                                <p>Copyright Confirmation using consortium Blockchain.</p>
+                                <a href="#" class="btn btn-outline-primary">Explore <i
+                                        class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 mb-4">
                         <div class="project-card">
-                            <img src="images/skel.jpg" class="project-image" alt="Project 2">
+                            <img src="images/Number-plate.png" class="project-image" alt="Project 2">
                             <div class="project-details">
-                                <h3 class ="project-name">Number plate detection system</h3>
+                                <h3 class="project-name">Number plate detection system</h3>
                                 <p>Number plate detection system built using CNN(convolution neural network)model.</p>
-                                <a href="#" class="btn btn-outline-primary">Discover <i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="btn btn-outline-primary">Discover <i
+                                        class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                     </div>
-					<div class="col-md-6 mb-4">
+                    <div class="col-md-6 mb-4">
                         <div class="project-card">
-                            <img src="images/katsuki.jpg" class="project-image" alt="Project 2">
+                            <img src="images/farm-management.jpg" class="project-image" alt="Project 2">
                             <div class="project-details">
-                                <h3 class ="project-name">Number plate detection system</h3>
-                                <p>Number plate detection system built using CNN(convolution neural network)model.</p>
-                                <a href="#" class="btn btn-outline-primary">Discover <i class="fas fa-external-link-alt"></i></a>
+                                <h3 class="project-name">Farm Management system</h3>
+                                <p>Allows farmers to directly talk to customers and vice versa, resulting lesser losses for the farmers.</p>
+                                <a href="#" class="btn btn-outline-primary">Discover <i
+                                        class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                     </div>
-					<div class="col-md-6 mb-4">
+                    <div class="col-md-6 mb-4">
                         <div class="project-card">
-                            <img src="images/7047015.jpg" class="project-image" alt="Project 2">
+                            <img src="images/object-identification.jpg" class="project-image" alt="Project 2">
                             <div class="project-details">
-                                <h3 class ="project-name">Number plate detection system</h3>
-                                <p>Number plate detection system built using CNN(convolution neural network)model.</p>
-                                <a href="#" class="btn btn-outline-primary">Discover <i class="fas fa-external-link-alt"></i></a>
+                                <h3 class="project-name">Object Identification APP</h3>
+                                <p>Helps in Identification of object and gives top 3 recommendations.</p>
+                                <a href="#" class="btn btn-outline-primary">Discover <i
+                                        class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                     </div>
@@ -155,7 +169,8 @@
                         <input type="email" class="form-control" id="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message"
+                            required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Send Message</button>
                 </form>
@@ -164,7 +179,15 @@
     </main>
 
     <footer class="site-footer bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Bhagavath Rugvedi. All rights reserved.</p>
+        <div class="contact-footer">
+            <p>Email: <a href="mailto:bhagavath2003@gmail.com">bhagavath2003@gmail.com</a></p>
+            <div class="social-links">
+                <a href="your-linkedin-link" class="linkedin-link"><i class="fab fa-linkedin"></i></a>
+                <a href="your-github-link" class="github-link"><i class="fab fa-github"></i></a>
+                <a href="your-discord-link" class="discord-link"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+        <p class="end">&copy; 2025 Bhagavath Rugvedi. All rights reserved.</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -172,4 +195,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
