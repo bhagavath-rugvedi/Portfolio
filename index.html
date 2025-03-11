@@ -9,18 +9,27 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
         rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
+
+
+        
 </head>
 
 <body>
@@ -39,7 +48,7 @@
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <label class="switch">
-                        <input type="checkbox" id="darkModeToggle">         <!-- <p>Dark Mode</p> -->
+                        <input type="checkbox" id="darkModeToggle"> <!-- <p>Dark Mode</p> -->
                         <span class="slider round"></span>
                         <i class="fas fa-moon moon-icon"></i>
                         <i class="fas fa-sun sun-icon"></i>
@@ -54,7 +63,7 @@
             <div class="hero-overlay"></div>
             <div class="container hero-content">
                 <h1 class="namskara">Hello, I'm Bhagavath</h1>
-                <p>A passionate Full Stack Developer.</p>
+                <p>A passionate <spanc id="jobProfile"></span></p>
                 <a href="#projects" id="midbut" class="btn btn-primary">View My Work</a>
             </div>
         </section>
@@ -68,20 +77,18 @@
                     <div class="about-text">
                         <h2>About Me</h2>
                         <p>
-                            My journey into web development began with a simple curiosity:
-                            how do websites actually work? That curiosity quickly turned into a passion,
-                            and I've been building and refining my skills ever since.
-                            From tackling complex coding challenges to designing intuitive user interfaces,
-                            I thrive on creating digital experiences that make a difference.
-                            I've had the privilege of working on projects that have allowed me to explore the
-                            latest technologies and push the boundaries of what's possible. Let's connect and build
-                            something extraordinary together!
+                            I got into web development out of curiosity—wondering how websites actually work. That
+                            curiosity turned into a passion, and now I’m all about creating smooth, user-friendly
+                            digital experiences. I love solving coding challenges and staying up to date with the latest
+                            technologies. Let’s connect and build something amazing together!
                         </p>
                         <div class="social-links">
                             <!-- my social profile links -->
-                            <a href="your-linkedin-url" class="linkedin-link"><i class="fab fa-linkedin"></i></a>
-                            <a href="your-github-url" class="github-link"><i class="fab fa-github"></i></a>
-                            <a href="your-discord-url" class="discord-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://www.linkedin.com/in/bhagavath-rugvedi/" class="linkedin-link"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/BeeRu2003" class="github-link"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/WPVtYAAZ" class="discord-link"><i
+                                    class="fab fa-discord"></i></a>
                         </div>
                     </div>
                 </div>
@@ -137,7 +144,8 @@
                             <img src="images/farm-management.jpg" class="project-image" alt="Project 2">
                             <div class="project-details">
                                 <h3 class="project-name">Farm Management system</h3>
-                                <p>Allows farmers to directly talk to customers and vice versa, resulting lesser losses for the farmers.</p>
+                                <p>Allows farmers to directly talk to customers and vice versa, resulting lesser losses
+                                    for the farmers.</p>
                                 <a href="#" class="btn btn-outline-primary">Discover <i
                                         class="fas fa-external-link-alt"></i></a>
                             </div>
@@ -160,7 +168,7 @@
 
         <section id="contact" class="section contact-section">
             <div class="container">
-                <h2>Contact</h2>
+                <h2>Contact Me</h2>
                 <form id="contactForm">
                     <div class="form-group">
                         <input type="text" class="form-control" id="name" placeholder="Your Name" required>
@@ -182,9 +190,10 @@
         <div class="contact-footer">
             <p>Email: <a href="mailto:bhagavath2003@gmail.com">bhagavath2003@gmail.com</a></p>
             <div class="social-links">
-                <a href="your-linkedin-link" class="linkedin-link"><i class="fab fa-linkedin"></i></a>
-                <a href="your-github-link" class="github-link"><i class="fab fa-github"></i></a>
-                <a href="your-discord-link" class="discord-link"><i class="fab fa-discord"></i></a>
+                <a href="https://www.linkedin.com/in/bhagavath-rugvedi/" class="linkedin-link"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/BeeRu2003" class="github-link"><i class="fab fa-github"></i></a>
+                <a href="https://discord.gg/WPVtYAAZ" class="discord-link"><i class="fab fa-discord"></i></a>
             </div>
         </div>
         <p class="end">&copy; 2025 Bhagavath Rugvedi. All rights reserved.</p>

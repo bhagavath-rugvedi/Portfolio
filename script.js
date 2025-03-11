@@ -85,4 +85,11 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error("skillsSection element not found.");
         }
     });
+    // Typed.js for the typing effect
+    var typed = new Typed("#jobProfile", {
+        strings: ["Web Developer.","Web Designer.","Problem Solver." ],
+        typeSpeed: 70,
+        backSpeed: 30,
+        loop: true,
+    });
 });

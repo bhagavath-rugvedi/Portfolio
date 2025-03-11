@@ -27,3 +27,30 @@ font-family: "Syncopate", sans-serif;
 font-weight: 700;
 font-style: normal;
 } 
+
+.stalinist-one-regular {
+    font-family: "Stalinist One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+/* <weight>: Use a value from 200 to 900
+<uniquifier>: Use a unique and descriptive class name */
+.source-code-pro-techy{
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400 ;
+  font-style: normal;
+}
+
+.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }

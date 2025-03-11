@@ -58,7 +58,7 @@ body.dark-mode {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ff4b4b;
+    background-color: #ffc06e;
     -webkit-transition: .4s;
     transition: .4s;
     z-index: 0;
@@ -172,12 +172,13 @@ h6 {
 
 .navbar .navbar-brand {
     color: #F5F5F5;
-    font-family: Cinzel Decorative;
+    font-family: Cinzel Decorative, Poppins;
     letter-spacing: 5px;
     background-color: rgba(0, 0, 0, 0.39);
     padding: 5px 10px;
     /* Add padding for visual separation */
     border-radius: 5px;
+    font-weight: 400;
 }
 
 .dark-mode .navbar .navbar-brand {
@@ -198,6 +199,8 @@ h6 {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    font-family: poppins;
+    font-weight: 400;
     /* Parallax effect */
 }
 
@@ -215,23 +218,31 @@ h6 {
     z-index: 1;
     position: relative;
 }
+.hero-content p{
+    font-size: large;
+}
 
 .namskara {
-    color: tan;
+    color: rgb(255, 192, 110);
+}
+
+.hero-section .hero-content #jobProfile{
+    font-family: "Source Code Pro", monospace;
 }
 
 .hero-section::before {
-    content: 'Hola!';
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.35); /* Dark overlay for readability */
+    /* background-color: rgba(0, 0, 0, 0.5); Dark overlay */
 }
 
 .hero-section.dark-mode .hero-overlay {
-    filter: brightness(0.7); /* Apply dark mode filter to overlay only */
+    filter: brightness(0.9); /* Apply dark mode filter to overlay only */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Sections */
@@ -299,6 +310,23 @@ h6 {
     max-width: 600px;
 }
 
+.about-text h2{
+    font-family: 'Righteous', 'Poppins', Arial;
+}
+
+.skills-section .container h2{
+    font-family:  'Righteous', 'Poppins', Arial;
+    color: #4A4A4A;
+}
+
+.projects-section .container h2{
+    font-family:  'Righteous', 'Poppins', Arial;
+    color: #ffffff;
+}
+
+.contact-section .container h2{
+    font-family:  'Righteous', 'Poppins', Arial;
+}
 .about-section h2 {
     font-size: 2.5rem;
     /* Increase heading size */
@@ -308,7 +336,7 @@ h6 {
     transition-duration: 0.3s;
 }
 
-.about-text .dark-mode h2 {
+.dark-mode .about-text h2 {
     font-size: 2.5rem;
     /* Increase heading size */
     margin-bottom: 20px;
@@ -322,7 +350,7 @@ h6 {
     /* Improve text readability */
     margin-bottom: 30px;
     transition: ease;
-    transition-duration: 0.3s;
+    transition-duration: 0.1s;
 }
 
 .social-links a {
@@ -343,7 +371,7 @@ body .github-link {
 
 body.dark-mode .github-link {
     color: #FFFFFF;
-    transition: color 0.6s ease;
+    transition: color 0.3s ease;
 }
 
 .discord-link {
@@ -499,6 +527,7 @@ body.dark-mode .github-link {
 .projects-section {
     /* background: linear-gradient(135deg, #34495E, #2C3E50); */
     background: radial-gradient(circle, #34495E, #2C3E50);
+    font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 .project-card {
@@ -558,6 +587,7 @@ body.dark-mode .github-link {
     background: linear-gradient(135deg, #F0F8FF, #E0FFFF);
     transition: ease;
     transition-duration: 0.5s;
+    font-family: Poppins, arial;
 }
 
 .contact-section h2 {
@@ -599,6 +629,7 @@ body.dark-mode .github-link {
     color: #fff;
     text-align: center;
     padding: 30px 0;
+    font-family: poppins,Arial, Helvetica, sans-serif;
 }
 
 footer {
@@ -683,4 +714,28 @@ footer {
 .dark-mode .navbar{
     background-color: rgba(18, 18, 18, 0.1);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* For Webkit Browsers (Chrome, Safari, Edge, Opera) */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+::-webkit-scrollbar-track {
+    /* background: #f1f1f1; Color of the tracking area */
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners of the thumb */
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the thumb on hover */
+}
+.dark-mode::-webkit-scrollbar-track {
+    /* background: #f1f1f1; Color of the tracking area */
+    background: #1d191b;
+}
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #a67137 #1d191b;
 }
