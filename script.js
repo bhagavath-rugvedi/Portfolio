@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener('load', () => {
+        const loading = document.getElementById('loading');
+        loading.style.display = 'none';
+    });
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -33,6 +37,30 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error("darkModeToggle element not found.");
     }
 
+    const skillBars = document.querySelectorAll('.skill-bar');
+    skillBars.forEach(skillBar => {
+        const skillLevel = skillBar.querySelector('.skill-level');
+        const skillName = skillBar.querySelector('.skill-name').textContent;
+        let percentage = 0;
+
+        switch (skillName) {
+            case 'HTML5': percentage = 95; break;
+            case 'CSS3': percentage = 80; break;
+            case 'JavaScript': percentage = 65; break;
+            case 'React': percentage = 80; break;
+            case 'Node \.js': percentage = 55; break;
+            case 'Figma': percentage = 60; break;
+            case 'MongoDB': percentage = 65; break;
+            case 'Git/GitHub': percentage = 70; break;
+            case 'Bootstrap': percentage = 85; break;
+            case 'AWS': percentage = 85; break;
+            default: percentage = 50; // Default percentage
+        }
+
+        skillLevel.style.width = percentage + '%';
+        skillBar.classList.add('skill-' + skillName.toLowerCase().replace('/', '-'));
+    });
+
     // Contact form submission handling
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
@@ -44,15 +72,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const message = document.getElementById('message').value;
 
             // Basic form validation
-            if (!name || !email || !message) {
+            if (name && email && message) {
+                alert('Thank you for your message!');
+                this.reset();
+            } else {
                 alert('Please fill in all fields.');
-                return;
             }
-
-            //for actual backend submission)
-            //console.log('Form submitted:', { name, email, message });
-            alert('Message sent successfully!');
-            contactForm.reset(); // Clear the form
         });
     } else {
         console.error("contactForm element not found.");
@@ -91,5 +116,44 @@ document.addEventListener('DOMContentLoaded', function() {
         typeSpeed: 70,
         backSpeed: 30,
         loop: true,
+        cursorChar: '|',
+        shuffle: true,
+        smartBackspace: true,
     });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('.section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(current)) {
+                link.classList.add('active');
+            }
+        });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.section').forEach(section => {
+    observer.observe(section);
+});
 });

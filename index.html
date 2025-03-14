@@ -27,13 +27,12 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-
-
-        
 </head>
 
 <body>
-
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
     <header class="site-header">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 1);">
             <a class="navbar-brand" href=" ">Bhagavath Rugvedi</a>
@@ -84,10 +83,10 @@
                         </p>
                         <div class="social-links">
                             <!-- my social profile links -->
-                            <a href="https://www.linkedin.com/in/bhagavath-rugvedi/" class="linkedin-link"><i
+                            <a href="https://www.linkedin.com/in/bhagavath-rugvedi/" rel="noopener noreferrer" target="_blank" class="linkedin-link"><i
                                     class="fab fa-linkedin"></i></a>
-                            <a href="https://github.com/BeeRu2003" class="github-link"><i class="fab fa-github"></i></a>
-                            <a href="https://discord.gg/WPVtYAAZ" class="discord-link"><i
+                            <a href="https://github.com/BeeRu2003" rel="noopener noreferrer" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/WPVtYAAZ" rel="noopener noreferrer" target="_blank" class="discord-link"><i
                                     class="fab fa-discord"></i></a>
                         </div>
                     </div>
@@ -99,16 +98,46 @@
             <div class="container">
                 <h2>Skills</h2>
                 <div class="skills-grid">
-                    <div class="skill skill-html">HTML5</div>
-                    <div class="skill skill-css">CSS3</div>
-                    <div class="skill skill-js">JavaScript</div>
-                    <div class="skill skill-react">React</div>
-                    <div class="skill skill-node">Node.js</div>
-                    <div class="skill skill-figma">Figma</div>
-                    <div class="skill skill-mongo">MongoDB</div>
-                    <div class="skill skill-git">Git/GitHub</div>
-                    <div class="skill skill-bootstrap">Bootstrap</div>
-                    <div class="skill skill-aws">AWS</div>
+                    <div class="skill-bar">
+                        <div class="skill-name">HTML5</div>
+                        <div class="skill-level" data-level="95%"></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">CSS3</div>
+                        <div class="skill-level" data-level="90%"></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-level" data-level="85%"></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">React</div>
+                        <div class="skill-level" data-level="80%"></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">Node.js</div>
+                        <div class="skill-level" data-level="75%"></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">Figma</div>
+                        <div class="skill-level" data-level="80%"></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">MongoDB</div>
+                        <div class="skill-level" data-level="70%"></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">Git/GitHub</div>
+                        <div class="skill-level" data-level="90%"></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">Bootstrap</div>
+                        <div class="skill-level" data-level="85%"></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-name">AWS</div>
+                        <div class="skill-level" data-level="60%"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -123,7 +152,19 @@
                             <div class="project-details">
                                 <h3 class="project-name">Copyright Confirmation using Consortium Blockchain</h3>
                                 <p>Copyright Confirmation using consortium Blockchain.</p>
-                                <a href="#" class="btn btn-outline-primary">Explore <i
+                                <a href="https://drive.google.com/file/d/185n-0NCjtGXrpNcSq6W5BjQtr9ku2nXB/view?usp=sharing"
+                                rel="noopener noreferrer" target="_blank" class="btn btn-outline-primary">Explore <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="project-card">
+                            <img src="images/blood-donation.jpg" class="project-image" alt="Project 4">
+                            <div class="project-details">
+                                <h3 class="project-name">Blood Bank Management</h3>
+                                <p>Blood Donation Management System using Java.</p>
+                                <a href="https://github.com/BeeRu2003/Blood-Donation.git" rel="noopener noreferrer" target="_blank"
+                                class="btn btn-outline-primary">Discover <i
                                         class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
@@ -134,30 +175,19 @@
                             <div class="project-details">
                                 <h3 class="project-name">Number plate detection system</h3>
                                 <p>Number plate detection system built using CNN(convolution neural network)model.</p>
-                                <a href="#" class="btn btn-outline-primary">Discover <i
-                                        class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/BeeRu2003/Number-Plate.git" rel="noopener noreferrer" target="_blank"
+                                class="btn btn-outline-primary">Discover <i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 mb-4">
                         <div class="project-card">
-                            <img src="images/farm-management.jpg" class="project-image" alt="Project 2">
+                            <img src="images/farm-management.jpg" class="project-image" alt="Project 3">
                             <div class="project-details">
                                 <h3 class="project-name">Farm Management system</h3>
                                 <p>Allows farmers to directly talk to customers and vice versa, resulting lesser losses
                                     for the farmers.</p>
-                                <a href="#" class="btn btn-outline-primary">Discover <i
-                                        class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="project-card">
-                            <img src="images/object-identification.jpg" class="project-image" alt="Project 2">
-                            <div class="project-details">
-                                <h3 class="project-name">Object Identification APP</h3>
-                                <p>Helps in Identification of object and gives top 3 recommendations.</p>
-                                <a href="#" class="btn btn-outline-primary">Discover <i
+                                <a href="#" rel="noopener noreferrer" target="_blank" class="btn btn-outline-primary">Discover <i
                                         class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
@@ -190,10 +220,9 @@
         <div class="contact-footer">
             <p>Email: <a href="mailto:bhagavath2003@gmail.com">bhagavath2003@gmail.com</a></p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/bhagavath-rugvedi/" class="linkedin-link"><i
-                        class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/BeeRu2003" class="github-link"><i class="fab fa-github"></i></a>
-                <a href="https://discord.gg/WPVtYAAZ" class="discord-link"><i class="fab fa-discord"></i></a>
+                <a href="https://www.linkedin.com/in/bhagavath-rugvedi/" rel="noopener noreferrer" target="_blank" class="linkedin-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/BeeRu2003" rel="noopener noreferrer" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+                <a href="https://discord.gg/WPVtYAAZ" rel="noopener noreferrer" target="_blank" class="discord-link"><i class="fab fa-discord"></i></a>
             </div>
         </div>
         <p class="end">&copy; 2025 Bhagavath Rugvedi. All rights reserved.</p>
