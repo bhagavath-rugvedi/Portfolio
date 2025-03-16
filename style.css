@@ -1,6 +1,6 @@
 /* style.css */
 body {
-    font-family: Syncopate, 'Roboto', sans-serif;
+    font-family: 'Syncopate', 'Roboto', sans-serif;
     color: #333;
     line-height: 1.7;
     background: linear-gradient(135deg, #e0f2f7, #cce0e5);
@@ -16,7 +16,7 @@ body.dark-mode {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: Noto Sans, 'Montserrat', sans-serif;
+    font-family: 'Noto Sans', 'Montserrat', sans-serif;
     color: #FBFBFB;
     font-weight: 600;
 }
@@ -51,9 +51,9 @@ a {
 }
 
 .cursor-dot {
-    width: 5px;
-    height: 5px;
-    background-color: white;
+    width: 10px;
+    height: 10px;
+    background-color: #ffba08;
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
@@ -65,7 +65,7 @@ a {
 .cursor-outline {
     width: 30px;
     height: 30px;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: 20px solid rgba(3, 7, 30, 0.6);
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
@@ -75,10 +75,10 @@ a {
 }
 
 .link-grow {
-    width: 50px;
-    height: 50px;
-    border-color: #4ca5ff;
-    background-color: rgba(76, 165, 255, 0.1);
+    width: 55px;
+    height: 55px;
+    border: 20px rgba(76, 165, 255, 0.5);
+    background-color: rgba(76, 165, 255, 0.5);
 }
 
 /* loading screen */
@@ -107,7 +107,7 @@ a {
     position: absolute;
     width: 0;
     height: 4px;
-    background: linear-gradient(90deg, #4ca5ff, #b673f8);
+    background: linear-gradient(90deg, #FDC830, #F37335);
     bottom: -8px;
     left: 0;
     animation: loading-bar 2s ease infinite;
@@ -168,13 +168,17 @@ a {
 .scroll-progress-bar {
     height: 100%;
     width: 0;
-    background: linear-gradient(90deg, #4ca5ff, #b673f8);
+    background: linear-gradient(90deg, #FDC830, #F37335);
     transition: width 0.2s ease;
 }
 /* .dark-mode .navbar .navbar-brand {
     color: #F5F5F5;
 } */
 
+.nav-item{
+    font-family: 'Poppins';
+    font-size: 1.1rem;;
+}
 .nav-link.active {
     color: #ffffff;
     font-weight: bold;
@@ -231,7 +235,7 @@ a {
     height: 2px;
     bottom: 0;
     left: 50%;
-    background: linear-gradient(90deg, #4ca5ff, #b673f8);
+    background: linear-gradient(90deg, #FDC830, #F37335);
     transition: width 0.3s ease, left 0.3s ease;
 }
 
@@ -384,15 +388,18 @@ input:checked+.slider .sun-icon {
 
 .hero-content p {
     font-size: large;
+    font-family: "PT Mono", 'montserrat', sans-serif;
 }
 
 .namskara {
     color: rgb(255, 192, 110);
+    font-family: 'WagonXLight', 'Roboto', sans-serif;
+    font-size: 64px;
 }
 
-.hero-section .hero-content #jobProfile {
-    font-family: "Source Code Pro", monospace;
-}
+/* .hero-section .hero-content #jobProfile {
+    font-family: 'VercettiRegular', monospace;
+} */
 
 .hero-section::before {
     content: '';
@@ -404,13 +411,18 @@ input:checked+.slider .sun-icon {
 }
 
 .btn-primary {
-    background-color: #D84040;
+    background-color: #A31621;
+    color: #FCF7F8;
     border-color: #8E1616;
 }
 
 .btn-primary:hover {
-    border-color: #D84040;
+    border-color: #A31621;
     background-color: #8E1616;
+}
+
+#midbut{
+    font-family: 'Montserrat','Poppins',monospace;
 }
 
 /* Sections */
@@ -451,7 +463,7 @@ input:checked+.slider .sun-icon {
 }
 
 .about-section h2 {
-    font-size: 2.5rem; /* Increase heading size */
+    font-size: 2.5rem; 
     margin-bottom: 20px;
     color: #4A4A4A;
     transition: ease;
@@ -499,7 +511,7 @@ input:checked+.slider .sun-icon {
 }
 
 .about-text h2 {
-    font-family: 'Righteous', 'Poppins', Arial;
+    font-family: 'nevis', 'Poppins', Arial;
 }
 
 .dark-mode .about-text h2 {
@@ -543,147 +555,117 @@ body.dark-mode .github-link {
 /* Skills Section */
 .skills-section {
     background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
-    opacity: 1;
-    position: relative;
-    background: none;
-    animation: fadeIn 1s ease-in-out;
-}
-
-.dark-mode.skills-section {
-    background: linear-gradient(135deg, #1c1b1b, #e0e0e0);
-    opacity: 0;
-
-}
-
-.dark-mode .skills-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 105%;
-    height: 105%;
-    background-image: url('images/skills.jpg');
-    background-size: cover;
-    background-position: center;
-    filter: blur(5px);
-    z-index: -1;
-}
-
-.skills-section .container h2 {
-    font-family: 'Righteous', 'Poppins', Arial;
-    color: #4A4A4A;
+    padding: 100px 0;
 }
 
 .skills-section h2 {
-    color: #000;
-    transition: ease;
-    transition-duration: 0.3s;
-}
-
-.skills-section.skills-visible {
-    animation: fadeIn 1s ease-in-out forwards;
-}
-
-.dark-mode.skills-section h2 {
-    color: white;
-    transition: ease;
-    transition-duration: 0.3s;
-}
-
-.skills {
-    padding: 20px 25px;
-    border-radius: 30px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.skills:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    font-family: 'nevis', 'montserrat', 'poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
 }
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 25px;
-    margin-top: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .skill-bar {
-    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-bar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skill-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #333;
+}
+
+.skill-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.skill-level {
+    height: 10px;
     background-color: #e0e0e0;
     border-radius: 5px;
-    margin-bottom: 15px;
     overflow: hidden;
+    position: relative;
+}
+
+.skill-level::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #4ca5ff;
+    border-radius: 5px;
+    animation: fillSkill 2s ease-in-out forwards;
+}
+
+@keyframes fillSkill {
+    to {
+        width: var(--skill-level);
+    }
+}
+
+/* Dark Mode */
+.dark-mode .skills-section {
+    background: linear-gradient(135deg, #1c1b1b, #121212);
+}
+
+.dark-mode .skills-section h2 {
+    color: #fff;
 }
 
 .dark-mode .skill-bar {
     background-color: #333;
 }
 
-.skill-name {
-    padding: 15px 20px;
-    font-weight: bold;
-    color: #333;
-    text-align: left;
-}
-
-.dark-mode .skill-name {
+.dark-mode .skill-name,
+.dark-mode .skill-icon {
     color: #fff;
 }
 
-.skill-level {
-    height: 10px;
-    border-radius: 5px;
-    width: 0;
-    transition: width 2s ease-in-out;
-}
-
-.skill-html5 .skill-level {
-    background-color: #e44d26;}
-
-.skill-css3 .skill-level {
-    background-color: #2965f1;}
-
-.skill-javascript .skill-level {
-    background-color: #f0db4f;}
-
-.skill-react .skill-level {
-    background-color: #61dafb;}
-
-.skill-node\.js .skill-level {
-    background-color: #68A063;}
-
-.skill-figma .skill-level {
-    background-color: #A982C9;}
-
-.skill-mongodb .skill-level {
-    background-color: #4db33d;}
-
-.skill-git-github .skill-level {
-    background-color: #f34f29;}
-
-.skill-bootstrap .skill-level {
-    background-color: #563d7c;}
-
-.skill-aws .skill-level {
-    background-color: #4A4A4A;}
-
-.dark-mode .skill-aws .skill-level {
-    background-color: #f0f0f0;  /*in dark mode, for aws bar visibility*/
+.dark-mode .skill-level {
+    background-color: #444;
 }
 
 /* Projects Section */
 .projects-section {
-    background: radial-gradient(circle, #34495E, #2C3E50);
-    font-family: Poppins, Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #cfd9df , #e2ebf0);
+    font-family: Poppins, sans-serif;
 }
 
 .projects-section .container h2 {
-    font-family: 'Righteous', 'Poppins', Arial;
-    color: #ffffff;
+    font-family: 'Nevis', 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    color: #333;
 }
 
 .projects-section.dark-mode {
@@ -760,7 +742,7 @@ body.dark-mode .github-link {
 }
 
 .contact-section .container h2 {
-    font-family: 'Righteous', 'Poppins', Arial;
+    font-family: 'nevis', 'Poppins', sans-serif;
 }
 
 .dark-mode .contact-section h2 {
@@ -795,7 +777,7 @@ body.dark-mode .github-link {
     color: #fff;
     text-align: center;
     padding: 30px 0;
-    font-family: poppins, Arial, Helvetica, sans-serif;
+    font-family: 'poppins', sans-serif;
     transition: color 0.3s ease;
 }
 
@@ -826,7 +808,7 @@ body.dark-mode .github-link {
 @media (max-width: 768px) {
     .hero-section {
         background-position: center top;
-        height: 50vh;
+        height: 100vh;
     }
 
     .about-content {
@@ -848,6 +830,11 @@ body.dark-mode .github-link {
     .cursor-dot,
     .cursor-outline {
         display: none;
+    }
+
+    .skill-name{
+        overflow: hidden;
+        font-size: 0.85rem;
     }
 }
 

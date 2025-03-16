@@ -31,30 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
       console.error("darkModeToggle element not found.");
     }
-  
-    // Skill Bars
-    const skillBars = document.querySelectorAll('.skill-bar');
-    skillBars.forEach(skillBar => {
-      const skillLevel = skillBar.querySelector('.skill-level');
-      const skillName = skillBar.querySelector('.skill-name').textContent;
-      const skills = {
-        'HTML5': 95,
-        'CSS3': 80,
-        'JavaScript': 65,
-        'React': 80,
-        'Node .js': 55,
-        'Figma': 60,
-        'MongoDB': 65,
-        'Git/GitHub': 70,
-        'Bootstrap': 85,
-        'AWS': 85
-      };
-      const percentage = skills[skillName] || 50; // Default to 50%
-  
-      skillLevel.style.width = percentage + '%';
-      skillBar.classList.add('skill-' + skillName.toLowerCase().replace('/', '-'));
-    });
-  
+    
     // Contact Form Submission
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
@@ -178,3 +155,13 @@ document.addEventListener('DOMContentLoaded', function() {
       navbar.classList.toggle('scrolled', window.scrollY > 50);
     });
   });
+
+  //animating skill bars
+  document.addEventListener('DOMContentLoaded', function () {
+    const skillBars = document.querySelectorAll('.skill-level');
+
+    skillBars.forEach(skillBar => {
+        const level = skillBar.getAttribute('data-level');
+        skillBar.style.setProperty('--skill-level', level);
+    });
+});

@@ -53,4 +53,33 @@ font-style: normal;
     font-family: "Righteous", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
+
+.pt-mono-regular {
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VercettiRegular';
+  src: url(fonts/Vercetti-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'WagonB';
+  src: url(fonts/Wagon-Bold.otf);
+}
+@font-face {
+  font-family: 'WagonXLight';
+  src: url(fonts/Wagon-ExtraLight.otf);
+}
+@font-face {
+  font-family: 'WagonXLightItalic';
+  src: url(fonts/Wagon-ExtraLightItalic.otf);
+}
+
+@font-face {
+  font-family: 'nevis';
+  src: url(fonts/nevis.ttf);
+}
